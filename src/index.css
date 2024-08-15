@@ -1,26 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+ul {
+  list-style-type: none;
 }
 
 :root {
   /* colors */
-  --primary-100: #e2e0ff;
-  --primary-200: #c1beff;
-  --primary-300: #a29dff;
-  --primary-400: #837dff;
-  --primary-500: #645cff;
-  --primary-600: #504acc;
-  --primary-700: #3c3799;
-  --primary-800: #282566;
-  --primary-900: #141233;
-  --backgroundColor: var(--primary-100);
-  --textColor: var(--primary-900);
-  --dark-backgroundColor: var(--primary-900);
-  --dark-textColor: var(--primary-100);
+  --light-grey: #fcfffc;
+  --dark-grey: #040f0f;
+  --green-200: #2ba84a;
+  --green-500: #248232;
+  --middle-grey: #2d3a3a;
+
+  --backgroundColor: var(--light-grey);
+  --textColor: var(--dark-grey);
+  --dark-backgroundColor: #040f0f;
+  --dark-textColor: #fcfffc;
   --darkModeTransition: color 0.3s ease-in-out,
     background-color 0.3s ease-in-out;
+  --max-width: 1920px;
 }
 
 .dark-theme {
@@ -28,8 +32,125 @@
   --backgroundColor: var(--dark-backgroundColor);
 }
 
-body {
+body,
+a {
   background-color: var(--backgroundColor);
   color: var(--textColor);
   transition: var(--darkModeTransition);
+}
+
+.main-container {
+  display: flex;
+  max-height: 100vh;
+}
+
+.main-container nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  /* background-color: #248232; */
+  padding: 40px;
+  position: relative;
+}
+
+.dark-toggle {
+  border: none;
+  padding: 6px;
+  font-size: 2rem;
+  cursor: pointer;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.ul-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.ul-menu li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.ul-menu li a:hover {
+  color: var(--green-200);
+}
+
+.dark-toggle:hover {
+  background-color: rgba(125, 125, 125, 0.2);
+}
+
+.toggle-icon-moon {
+  color: var(--light-grey);
+}
+
+.toggle-icon-sun {
+  color: var(--dark-grey);
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.logo a span {
+  color: var(--green-200);
+}
+
+.home-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-transform: uppercase;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.names-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.names-container h2 {
+  color: var(--middle-grey);
+  padding-left: 5px;
+}
+
+.names-container .name-front {
+  font-size: 6rem;
+  color: var(--green-200);
+}
+.names-container .name-back {
+  font-size: 6rem;
+  margin-top: -20px;
+  margin-left: 100px;
+}
+
+.social-media-links {
+  display: flex;
+  position: absolute;
+  gap: 10px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.social-media-links li a {
+  font-size: 2rem;
+}
+
+.social-media-links li a:hover {
+  color: var(--green-200);
+  transition: 0.3s ease;
 }

@@ -10,6 +10,7 @@ const ProjectsListPage = () => {
           Project {project}
         </Link>
       ))}
+      <a href="https://storyset.com/work">Work illustrations by Storyset</a>
     </div>
   );
 };
