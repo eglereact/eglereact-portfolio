@@ -12,13 +12,13 @@ const Navigation = () => {
         </div>
         <ul className="ul-menu">
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects">Projektai</Link>
           </li>
           <li>
-            <Link to="/contacts">Contacts</Link>
+            <Link to="/contacts">Kontaktai</Link>
           </li>
           <li>
-            <Link to="/about-me">About Me</Link>
+            <Link to="/about-me">Apie mane</Link>
           </li>
           <li>
             <ThemeToggle />

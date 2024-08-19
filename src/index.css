@@ -16,7 +16,7 @@ ul {
   --dark-grey: #040f0f;
   --green-200: #2ba84a;
   --green-500: #248232;
-  --middle-grey: #2d3a3a;
+  --middle-grey: #415353;
 
   --backgroundColor: var(--light-grey);
   --textColor: var(--dark-grey);
@@ -77,6 +77,7 @@ a {
 .ul-menu li a {
   text-decoration: none;
   font-size: 1.5rem;
+  background: none;
 }
 
 .ul-menu li a:hover {
@@ -153,4 +154,72 @@ a {
 .social-media-links li a:hover {
   color: var(--green-200);
   transition: 0.3s ease;
+}
+
+.image {
+  overflow: hidden;
+  width: 30%;
+}
+
+.rotatingText {
+  display: flex;
+  height: 110px;
+  overflow: hidden;
+}
+
+.rotatingText-content {
+  position: relative;
+  width: 100%;
+}
+
+.rotatingText-adjective {
+  font-size: 6rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  text-transform: uppercase;
+  color: #248232;
+  font-weight: bold;
+  animation: rotateText 12s infinite;
+}
+
+.rotatingText-adjective:nth-of-type(1) {
+  animation-delay: 0s;
+}
+
+.rotatingText-adjective:nth-of-type(2) {
+  animation-delay: 4s;
+}
+
+.rotatingText-adjective:nth-of-type(3) {
+  animation-delay: 8s;
+}
+
+@keyframes rotateText {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
 }
