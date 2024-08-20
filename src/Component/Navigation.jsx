@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import ThemeToggle from "../Component/ThemeToggle";
 
 const Navigation = () => {
@@ -12,13 +12,34 @@ const Navigation = () => {
         </div>
         <ul className="ul-menu">
           <li>
-            <Link to="/projects">Projektai</Link>
+            <NavLink
+              to="/projects"
+              className={({ isActive }) => {
+                return isActive && "active-navlink";
+              }}
+            >
+              Projektai
+            </NavLink>
           </li>
           <li>
-            <Link to="/contacts">Kontaktai</Link>
+            <NavLink
+              to="/contacts"
+              className={({ isActive }) => {
+                return isActive && "active-navlink";
+              }}
+            >
+              Kontaktai
+            </NavLink>
           </li>
           <li>
-            <Link to="/about-me">Apie mane</Link>
+            <NavLink
+              to="/about-me"
+              className={({ isActive }) => {
+                return isActive && "active-navlink";
+              }}
+            >
+              Apie mane
+            </NavLink>
           </li>
           <li>
             <ThemeToggle />

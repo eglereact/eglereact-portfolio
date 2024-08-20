@@ -25,7 +25,7 @@ const HomePage = () => {
         <img
           src="/images/code4.svg"
           className="image"
-          alt="code"
+          alt="Hands coding"
           data-aos="fade-left"
           data-aos-delay="1300"
         />

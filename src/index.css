@@ -223,3 +223,7 @@ a {
     transform: translateY(100%);
   }
 }
+
+.active-navlink {
+  color: #248232;
+}
