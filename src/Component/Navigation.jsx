@@ -15,7 +15,7 @@ const Navigation = () => {
             <NavLink
               to="/projects"
               className={({ isActive }) => {
-                return isActive && "active-navlink";
+                return isActive ? "active-navlink" : "";
               }}
             >
               Projektai
@@ -25,7 +25,7 @@ const Navigation = () => {
             <NavLink
               to="/contacts"
               className={({ isActive }) => {
-                return isActive && "active-navlink";
+                return isActive ? "active-navlink" : "";
               }}
             >
               Kontaktai
@@ -35,7 +35,7 @@ const Navigation = () => {
             <NavLink
               to="/about-me"
               className={({ isActive }) => {
-                return isActive && "active-navlink";
+                return isActive ? "active-navlink" : "";
               }}
             >
               Apie mane

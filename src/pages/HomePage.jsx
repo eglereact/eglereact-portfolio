@@ -10,11 +10,15 @@ const HomePage = () => {
           <h2 data-aos="fade-right" data-aos-delay="100">
             Eglė Juknevičiūtė
           </h2>
-          <div class="rotatingText" data-aos="fade-right" data-aos-delay="500">
-            <div class="rotatingText-content">
-              <p class="rotatingText-adjective">Frontend</p>
-              <p class="rotatingText-adjective">JavaScript</p>
-              <p class="rotatingText-adjective">React</p>
+          <div
+            className="rotatingText"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
+            <div className="rotatingText-content">
+              <p className="rotatingText-adjective">Frontend</p>
+              <p className="rotatingText-adjective">JavaScript</p>
+              <p className="rotatingText-adjective">React</p>
             </div>
           </div>
           <h1 data-aos="fade-left" data-aos-delay="1000" className="name-back">
