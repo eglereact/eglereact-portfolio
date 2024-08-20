@@ -198,7 +198,7 @@ a {
 }
 
 @keyframes rotateText {
-  0% {
+  10% {
     opacity: 0;
     transform: translateY(100%);
   }
