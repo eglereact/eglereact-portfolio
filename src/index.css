@@ -230,7 +230,8 @@ a {
 
 /* -------PROJECT LIST PAGE STYLE-------------------------------------------- */
 
-.project-list-container {
+.project-list-container,
+.project-page-container {
   display: flex;
   max-width: var(--max-width);
   margin: 0 auto;
@@ -329,4 +330,28 @@ a {
 .button-2:hover {
   background-position: 100%;
   color: var(--green-200);
+}
+
+.project-page-img {
+  width: 500px;
+}
+
+.project-page-info {
+  display: flex;
+  background-color: #248232;
+  width: 80%;
+}
+
+.project-page-maintext {
+  width: 50%;
+  background-color: aqua;
+}
+
+.project-page-otherinfo {
+  width: 50%;
+  background-color: khaki;
+}
+
+iframe {
+  border: none;
 }
