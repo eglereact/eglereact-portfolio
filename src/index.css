@@ -228,6 +228,8 @@ a {
   color: #248232;
 }
 
+/* -------PROJECT LIST PAGE STYLE-------------------------------------------- */
+
 .project-list-container {
   display: flex;
   max-width: var(--max-width);
@@ -242,8 +244,8 @@ a {
 
 .project-container {
   display: flex;
-  width: 60%;
-  margin-bottom: 20px;
+  width: 65%;
+  margin: 100px;
   justify-content: space-around;
   align-items: center;
 }
@@ -270,6 +272,8 @@ a {
 
 .project-number {
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .project-title {
@@ -279,6 +283,12 @@ a {
 
 .project-minitext {
   font-size: 1.5rem;
+}
+
+.number-icon {
+  color: var(--green-200);
+  margin-right: 10px;
+  display: flex;
 }
 
 .button {
