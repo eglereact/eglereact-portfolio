@@ -1,10 +1,12 @@
 import Navigation from "../Component/Navigation";
 import SocialMediaLinks from "../Component/SocialMediaLinks";
+import WarningMessage from "../Component/WarningMessage";
 
 const HomePage = () => {
   return (
     <>
       <Navigation />
+      <WarningMessage />
       <section className="home-name">
         <div className="names-container">
           <h2 data-aos="fade-right" data-aos-delay="100">
