@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/eglereact-portfolio/static/css/main.0255a671.css",
+    "main.js": "/eglereact-portfolio/static/js/main.a8923906.js",
+    "index.html": "/eglereact-portfolio/index.html",
+    "main.0255a671.css.map": "/eglereact-portfolio/static/css/main.0255a671.css.map",
+    "main.a8923906.js.map": "/eglereact-portfolio/static/js/main.a8923906.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0255a671.css",
+    "static/js/main.a8923906.js"
+  ]
+}
