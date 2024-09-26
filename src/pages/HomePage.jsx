@@ -29,7 +29,7 @@ const HomePage = () => {
         </div>
 
         <img
-          src="/images/code4.svg"
+          src="/eglereact-portfolio/images/code4.svg"
           className="image"
           alt="Hands coding"
           data-aos="fade-left"

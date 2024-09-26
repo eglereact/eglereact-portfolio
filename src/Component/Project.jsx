@@ -19,7 +19,7 @@ const Project = ({ project }) => {
           Daugiau <FaArrowRight />
         </Link>
       </div>
-      <div className="project-image-container">
+      <div className="screen">
         <img className="project-img" src={project.img} alt={project.name} />
       </div>
     </div>
