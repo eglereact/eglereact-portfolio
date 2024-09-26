@@ -16,24 +16,36 @@ ul {
 
 :root {
   /* colors */
-  --light-grey: #fcfffc;
+  --light-grey: #f8f7f9;
   --dark-grey: #040f0f;
   --green-200: #2ba84a;
   --green-500: #248232;
   --middle-grey: #415353;
+  --card-light: #171a21;
 
+  /* Default light mode variables */
   --backgroundColor: var(--light-grey);
   --textColor: var(--dark-grey);
+  --cardBackgroundColor: var(--light-grey);
+  --cardTextColor: var(--dark-grey);
+
+  /* Dark mode variables */
   --dark-backgroundColor: #040f0f;
   --dark-textColor: #fcfffc;
+  --dark-cardBackgroundColor: var(--card-light);
+  --dark-cardTextColor: #eaeaea;
+
   --darkModeTransition: color 0.3s ease-in-out,
     background-color 0.3s ease-in-out;
   --max-width: 1920px;
 }
 
+/* Dark Theme Styles */
 .dark-theme {
-  --textColor: var(--dark-textColor);
   --backgroundColor: var(--dark-backgroundColor);
+  --textColor: var(--dark-textColor);
+  --cardBackgroundColor: var(--dark-cardBackgroundColor);
+  --cardTextColor: var(--dark-cardTextColor);
 }
 
 body,
@@ -41,6 +53,20 @@ a {
   background-color: var(--backgroundColor);
   color: var(--textColor);
   transition: var(--darkModeTransition);
+}
+
+/* Styling for a specific class with light and dark modes */
+.custom-card {
+  background-color: var(--cardBackgroundColor);
+  color: var(--cardTextColor);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 .main-container {
@@ -377,4 +403,32 @@ iframe {
   display: flex; /* Flexbox to center the image */
   justify-content: center;
   align-items: center;
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  --c: no-repeat radial-gradient(farthest-side, var(--green-200) 92%, #0000);
+  background: var(--c) 50% 0, var(--c) 50% 100%, var(--c) 100% 50%,
+    var(--c) 0 50%;
+  background-size: 12px 12px;
+  animation: l12 1s infinite;
+}
+.loader::before {
+  margin: 4px;
+  filter: hue-rotate(45deg);
+  background-size: 8px 8px;
+  animation-timing-function: linear;
+}
+
+@keyframes l12 {
+  100% {
+    transform: rotate(0.5turn);
+  }
 }

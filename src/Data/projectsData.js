@@ -1,3 +1,7 @@
+import { FaReact } from "react-icons/fa";
+import { SiMysql, SiTailwindcss } from "react-icons/si";
+import { FaNode } from "react-icons/fa";
+
 export const projects = [
   {
     id: 1,
@@ -7,10 +11,10 @@ export const projects = [
     videoUrl:
       "https://drive.google.com/file/d/1rJbzhfL04fvvRGlIcvBFLk7ljQ-x03El/preview",
     used: [
-      "React biblioteką",
-      "Express serverį",
-      "MySql duomenų bazę",
-      "TailwindCSS",
+      { icon: <FaReact />, text: "React biblioteką" },
+      { icon: <FaNode />, text: "Express serverį" },
+      { icon: <SiMysql />, text: "MySQL duomenų bazę" },
+      { icon: <SiTailwindcss />, text: "TailwindCSS" },
     ],
     description:
       "DnD miniatiūrų parduotuvė, siūlanti produktų sąrašą, krepšelio funkcionalumą ir saugius mokėjimus per Braintree. Vartotojai gali prisijungti arba registruotis, o administratoriaus skydelyje galima valdyti produktus, užsakymus ir vartotojus. Skydelis leidžia pridėti, redaguoti ir šalinti produktus, užtikrinant sklandų parduotuvės valdymą.",
