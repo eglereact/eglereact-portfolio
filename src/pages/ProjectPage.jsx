@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { projects } from "../Data/projectsData";
 import Navigation from "../Component/Navigation";
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 
 const ProjectPage = () => {
   const params = useParams();
@@ -34,6 +35,16 @@ const ProjectPage = () => {
             </h2>
             <h3 className="text-2xl py-6">{project.name}</h3>
             <p className="text-xl">{project.description}</p>
+            <div>
+              {" "}
+              <a
+                href={project.github}
+                className="text-xl uppercase hover:text-[#2ba84a] flex items-center py-4"
+              >
+                <FaGithub size={40} />{" "}
+                <span className="ml-2">Github nuoroda</span>
+              </a>
+            </div>
           </div>
           <div className="w-1/2 p-10 custom-card">
             <h2 className="text-3xl uppercase font-bold text-[#2ba84a] pb-6">
@@ -57,7 +68,7 @@ const ProjectPage = () => {
 
         <div className="custom-card w-4/5 flex flex-col items-center">
           <h2 className="text-3xl uppercase font-bold text-[#2ba84a] pb-6">
-            Watch the project video
+            Projekto vaizdo įrašas
           </h2>
           {loading && (
             <div className="">

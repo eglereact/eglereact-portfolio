@@ -48,8 +48,7 @@ ul {
   --cardTextColor: var(--dark-cardTextColor);
 }
 
-body,
-a {
+body {
   background-color: var(--backgroundColor);
   color: var(--textColor);
   transition: var(--darkModeTransition);
