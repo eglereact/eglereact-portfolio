@@ -13,9 +13,6 @@ const ProjectPage = () => {
     setLoading(false);
   };
 
-  // const videoUrl =
-  //   "https://drive.google.com/file/d/1afvlQvcGNVil1mODBbTlhiTpd2o-G82W/preview";
-
   const project = params.projectId
     ? projects.find((p) => p.id === +params.projectId)
     : projects[0];
@@ -30,7 +27,7 @@ const ProjectPage = () => {
       <section className="project-page-container">
         <div className="w-4/5 flex p-20 gap-20 ">
           <div className=" w-1/2 p-10 custom-card">
-            <h2 className="text-3xl uppercase font-bold text-[#2ba84a]">
+            <h2 className="text-3xl uppercase font-bold text-[#357358]">
               Projekto informacija:
             </h2>
             <h3 className="text-2xl py-6">{project.name}</h3>
@@ -39,7 +36,7 @@ const ProjectPage = () => {
               {" "}
               <a
                 href={project.github}
-                className="text-xl uppercase hover:text-[#2ba84a] flex items-center py-4"
+                className="text-xl uppercase hover:text-[#357358] flex items-center py-4"
               >
                 <FaGithub size={40} />{" "}
                 <span className="ml-2">Github nuoroda</span>
@@ -47,7 +44,7 @@ const ProjectPage = () => {
             </div>
           </div>
           <div className="w-1/2 p-10 custom-card">
-            <h2 className="text-3xl uppercase font-bold text-[#2ba84a] pb-6">
+            <h2 className="text-3xl uppercase font-bold text-[#357358] pb-6">
               Projekte naudojau:
             </h2>
             {project.used && (
@@ -67,7 +64,7 @@ const ProjectPage = () => {
         </div>
 
         <div className="custom-card w-4/5 flex flex-col items-center">
-          <h2 className="text-3xl uppercase font-bold text-[#2ba84a] pb-6">
+          <h2 className="text-3xl uppercase font-bold text-[#357358] pb-6">
             Projekto vaizdo įrašas
           </h2>
           {loading && (

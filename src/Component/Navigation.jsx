@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import ThemeToggle from "../Component/ThemeToggle";
+import WarningMessage from "./WarningMessage";
 
 const Navigation = () => {
   return (
@@ -10,6 +11,7 @@ const Navigation = () => {
             <span>Egle</span>React
           </Link>
         </div>
+        <WarningMessage />
         <ul className="ul-menu">
           <li>
             <NavLink

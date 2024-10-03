@@ -18,8 +18,8 @@ ul {
   /* colors */
   --light-grey: #f8f7f9;
   --dark-grey: #040f0f;
-  --green-200: #2ba84a;
-  --green-500: #248232;
+  --green-200: #357358;
+  --green-500: #255744;
   --middle-grey: #415353;
   --card-light: #171a21;
 
@@ -209,7 +209,7 @@ body {
   top: 0;
   opacity: 0;
   text-transform: uppercase;
-  color: #248232;
+  color: var(--green-200);
   font-weight: bold;
   animation: rotateText 12s infinite;
 }
@@ -254,7 +254,8 @@ body {
 }
 
 .active-navlink {
-  color: #248232;
+  color: var(--green-500);
+  font-weight: 700;
 }
 
 /* -------PROJECT LIST PAGE STYLE-------------------------------------------- */
