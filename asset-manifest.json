@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/eglereact-portfolio/static/css/main.eeccd425.css",
-    "main.js": "/eglereact-portfolio/static/js/main.1012074f.js",
+    "main.css": "/eglereact-portfolio/static/css/main.8aa454a2.css",
+    "main.js": "/eglereact-portfolio/static/js/main.2015bbbf.js",
     "index.html": "/eglereact-portfolio/index.html",
-    "main.eeccd425.css.map": "/eglereact-portfolio/static/css/main.eeccd425.css.map",
-    "main.1012074f.js.map": "/eglereact-portfolio/static/js/main.1012074f.js.map"
+    "main.8aa454a2.css.map": "/eglereact-portfolio/static/css/main.8aa454a2.css.map",
+    "main.2015bbbf.js.map": "/eglereact-portfolio/static/js/main.2015bbbf.js.map"
   },
   "entrypoints": [
-    "static/css/main.eeccd425.css",
-    "static/js/main.1012074f.js"
+    "static/css/main.8aa454a2.css",
+    "static/js/main.2015bbbf.js"
   ]
 }
