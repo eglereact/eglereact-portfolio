@@ -31,7 +31,7 @@ const Navigation = () => {
               Kontaktai
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/about-me"
               className={({ isActive }) => {
@@ -40,7 +40,7 @@ const Navigation = () => {
             >
               Apie mane
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <ThemeToggle />
           </li>
