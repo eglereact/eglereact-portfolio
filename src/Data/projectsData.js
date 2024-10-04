@@ -1,6 +1,7 @@
 import { FaReact } from "react-icons/fa";
 import { SiMysql, SiTailwindcss } from "react-icons/si";
 import { FaNode } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
 
 export const projects = [
   {
@@ -36,5 +37,22 @@ export const projects = [
     github: "https://github.com/eglereact/react-fund-me",
     description:
       "React Fund Me yra finansavimo platforma, leidžianti vartotojams lengvai kurti ir valdyti lėšų rinkimo kampanijas. Vartotojai gali lengvai prisijungti ar užsiregistruoti, kad sukurtų kampanijas, o administratoriaus skydelyje suteikiama visiška kontrolė valdant įrašus, aukas ir vartotojų paskyras. Valdymo panelė supaprastina turinio pridėjimo, redagavimo ir šalinimo procesą, užtikrindama sklandų visų lėšų rinkimo aspektų valdymą.",
+  },
+  {
+    id: 3,
+    name: "Red Book",
+    info: "Web aplikacija, kurioje gali būti bet kokio tipo blogas.",
+    img: "/eglereact-portfolio/images/bookweb.png",
+    videoUrl:
+      "https://drive.google.com/file/d/1Lh4FiSd0SR-OZLnin7QqWfemrPJ9797j/preview",
+    used: [
+      { icon: <FaReact />, text: "React biblioteką" },
+      { icon: <FaNode />, text: "Express serverį" },
+      { icon: <SiMysql />, text: "MySQL duomenų bazę" },
+      { icon: <FaCss3 />, text: "SCSS/CSS" },
+    ],
+    github: "https://github.com/eglereact/red-book",
+    description:
+      "'Red Book' yra web aplikacija, kurioje gali būti bet kokio tipo blogas. Vartotojai gali lengvai prisijungti ar užsiregistruoti. Administratoriaus skydelyje suteikiama visiška kontrolė valdant straipsnius ir vartotojų paskyras.",
   },
 ];
