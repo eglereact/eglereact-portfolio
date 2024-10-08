@@ -5,14 +5,16 @@ import WarningMessage from "./WarningMessage";
 const Navigation = () => {
   return (
     <main className="main-container">
-      <nav>
+      <nav className="flex flex-col sm:flex-row">
         <div className="logo">
           <Link to="/">
             <span>Egle</span>React
           </Link>
         </div>
-        <WarningMessage />
-        <ul className="ul-menu">
+        <div className="hidden lg:block">
+          <WarningMessage />
+        </div>
+        <ul className="ul-menu pl-6">
           <li>
             <NavLink
               to="/projects"
