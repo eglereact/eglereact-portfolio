@@ -273,16 +273,15 @@ body {
   align-items: center;
 }
 
-.project-container {
+/* .project-container {
   display: flex;
   width: 65%;
   margin: 100px;
   justify-content: space-around;
   align-items: center;
-}
+} */
 
 .project-text-container {
-  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -306,10 +305,10 @@ body {
   align-items: center;
 }
 
-.project-title {
+/* .project-title {
   font-size: 2.5rem;
   letter-spacing: 5px;
-}
+} */
 
 .project-minitext {
   font-size: 1.5rem;
@@ -393,8 +392,8 @@ iframe {
 }
 
 .screen {
-  width: 600px; /* Screen size */
-  height: 300px;
+  width: auto;
+  max-width: 600px;
   background-color: #333; /* Screen background color */
   border: 10px solid #555; /* Screen frame */
   border-radius: 15px; /* Rounded corners for the screen */

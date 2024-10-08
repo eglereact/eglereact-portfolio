@@ -23,7 +23,7 @@ export const projects = [
   },
   {
     id: 2,
-    name: "React fund me",
+    name: "React Fund Me",
     info: "Finansavimo platforma leidžianti vartotojams kurti savo kampanijas ir aukoti kitoms.",
     img: "/eglereact-portfolio/images/fundweb.png",
     videoUrl:
