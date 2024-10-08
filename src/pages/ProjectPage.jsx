@@ -25,8 +25,8 @@ const ProjectPage = () => {
     <>
       <Navigation />
       <section className="project-page-container">
-        <div className="w-4/5 flex p-20 gap-20 ">
-          <div className=" w-1/2 p-10 custom-card">
+        <div className="w-full lg:w-4/5 flex flex-col lg:flex-row lg:py-10 gap-10 ">
+          <div className="w-full lg:w-1/2 p-10 custom-card">
             <h2 className="text-3xl uppercase font-bold text-[#357358]">
               Projekto informacija:
             </h2>
@@ -43,7 +43,7 @@ const ProjectPage = () => {
               </a>
             </div>
           </div>
-          <div className="w-1/2 p-10 custom-card">
+          <div className="w-full lg:w-1/2 p-10 custom-card">
             <h2 className="text-3xl uppercase font-bold text-[#357358] pb-6">
               Projekte naudojau:
             </h2>
@@ -63,7 +63,7 @@ const ProjectPage = () => {
           </div>
         </div>
 
-        <div className="custom-card w-4/5 flex flex-col items-center">
+        <div className="custom-card w-full lg:w-4/5 flex flex-col items-center mt-10 lg:mt-0">
           <h2 className="text-3xl uppercase font-bold text-[#357358] pb-6">
             Projekto vaizdo įrašas
           </h2>
@@ -73,11 +73,14 @@ const ProjectPage = () => {
             </div>
           )}
 
-          <div className={`${loading ? "hidden" : "block"}`}>
+          <div
+            className={`${
+              loading ? "hidden" : "block"
+            } relative pb-[56.25%] h-0 w-full`}
+          >
             <iframe
               src={project.videoUrl}
-              width="1096"
-              height="685"
+              className="absolute top-0 left-0 w-full h-full"
               allow="autoplay"
               title="Google Drive Video"
               allowFullScreen
