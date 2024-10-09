@@ -148,9 +148,14 @@ body {
 }
 
 .names-container {
-  width: 40%;
   display: flex;
   flex-direction: column;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
 }
 
 .names-container h2 {
@@ -187,7 +192,8 @@ body {
 
 .image {
   overflow: hidden;
-  width: 30%;
+  width: 100%;
+  padding: 20px;
 }
 
 .rotatingText {
@@ -429,5 +435,69 @@ iframe {
 @keyframes l12 {
   100% {
     transform: rotate(0.5turn);
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-name {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .rotatingText-adjective {
+    font-size: 4.5rem;
+  }
+  .names-container {
+    width: 80%;
+  }
+  .names-container .name-front {
+    font-size: 4.5rem;
+  }
+  .names-container .name-back {
+    font-size: 4.5rem;
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-name {
+    margin-top: -20px;
+  }
+  .rotatingText-adjective {
+    font-size: 3.5rem;
+  }
+  .names-container .name-front {
+    font-size: 3.5rem;
+  }
+  .names-container .name-back {
+    font-size: 3.5rem;
+    margin-top: -60px;
+  }
+
+  .image {
+    margin-top: 20px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-name {
+    margin-top: -50px;
+  }
+
+  .rotatingText-adjective {
+    font-size: 2.5rem;
+  }
+  .names-container .name-front {
+    font-size: 2.5rem;
+  }
+  .names-container .name-back {
+    font-size: 2.5rem;
+    margin-top: -70px;
+  }
+
+  .image {
+    margin-top: 20px;
+    width: 80%;
   }
 }

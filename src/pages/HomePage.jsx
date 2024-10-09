@@ -26,14 +26,16 @@ const HomePage = () => {
             Developer
           </h1>
         </div>
+        <div className="img-div">
+          <img
+            src="/eglereact-portfolio/images/code10.png"
+            className="image"
+            alt="Hands coding"
+            data-aos="fade-left"
+            data-aos-delay="1300"
+          />
+        </div>
 
-        <img
-          src="/eglereact-portfolio/images/code10.png"
-          className="image"
-          alt="Hands coding"
-          data-aos="fade-left"
-          data-aos-delay="1300"
-        />
         <SocialMediaLinks />
       </section>
     </>
